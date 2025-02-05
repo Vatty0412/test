@@ -1,0 +1,23 @@
+.class-card {
+    background-color: #FFB200;
+    border: 1px;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    background: rgba(255, 178, 0, 0.60);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(255, 178, 0, 0.44);
+  }
+
+.class-content {
+  text-align: center;
+  resize: horizontal;
+}
+
+.class-title {
+  text-align: left;
+
+}

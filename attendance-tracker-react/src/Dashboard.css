@@ -1,0 +1,26 @@
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .class-cards {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .course-cards {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .dashboard {
+    background-image: url('./dashboard_bg.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 80px);
+    margin: 0;
+  }
