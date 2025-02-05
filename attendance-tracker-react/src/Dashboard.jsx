@@ -2,6 +2,7 @@
 import React from 'react';
 import ClassCard from './ClassCard';
 import CourseCard from './CourseCard';
+import CourseGrid from './CourseGrid';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -17,7 +18,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="dashboard">
+    <><div className="dashboard">
       <div className="class-cards">
         {classes.map((cls, index) => (
           <ClassCard key={index} className={cls.name} timings={cls.timings} />
@@ -29,6 +30,7 @@ const Dashboard = () => {
         ))}
       </div>
     </div>
+  </>
   );
 };
 

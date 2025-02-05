@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Dashboard from './Dashboard';
+import Courses from './Courses.jsx';
 import './App.css';
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
     <div className="app">
       <Navbar />
       <Dashboard />
+      <Courses />
     </div>
   );
 };
