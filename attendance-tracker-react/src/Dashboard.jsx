@@ -26,7 +26,12 @@ const Dashboard = () => {
       </div>
       <div className="course-cards">
         {courses.map((course, index) => (
-          <CourseCard key={index} courseName={course.name} attendance={course.attendance} totalClasses={course.totalClasses} />
+          <CourseCard 
+          key={index} 
+          courseName={course.name} 
+          attendance={course.attendance} 
+          totalClasses={course.totalClasses}
+          showAttendance={true} />
         ))}
       </div>
     </div>

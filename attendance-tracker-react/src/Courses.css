@@ -1,0 +1,9 @@
+.courses {
+    padding: 20px;
+    background-color: #D6B685;
+    background-size: cover;
+    background-position:center;
+    height: calc(100vh - 70px);
+    margin: 0;
+    overflow: auto;
+}

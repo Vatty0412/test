@@ -1,18 +1,40 @@
 // src/App.jsx
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Router and Route
 import Navbar from './Navbar';
 import Dashboard from './Dashboard';
-import Courses from './Courses.jsx';
+import Courses from './Courses';
+import AddCourseCard from './AddCourseCard'; // Import your Add Course component
 import './App.css';
 
-const App = () => {
-  return (
-    <div className="app">
-      <Navbar />
-      <Dashboard />
-      <Courses />
-    </div>
-  );
+//Old code
+
+const App = () => { 
+  return ( 
+  <div className="app"> 
+    <Navbar /> 
+    <Dashboard /> 
+    <Courses /> 
+  </div> 
+  ); 
 };
+
+
+
+//The DOM based code
+// const App = () => {
+//   return (
+//     <Router> {/* Wrap your application in Router */}
+//       <div className="app">
+//         <Navbar />
+//         <Routes> {/* Use Switch to render only the first matching route */}
+//           <Route path="/" exact component={Dashboard} /> {/* Home route */}
+//           <Route path="/courses" component={Courses} /> {/* Courses route */}
+//           <Route path="/add-course" component={AddCourseCard} /> {/* Add Course route */}
+//         </Routes>
+//       </div>
+//     </Router>
+//   );
+// };
 
 export default App;
