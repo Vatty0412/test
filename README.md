@@ -16,13 +16,17 @@ of your academic schedule.
 ## Table of Contents:
 
 ## Technology Stack:
-  Frontend
-> React.js + Vite
-> HTML-5
-> CSS-3
-
-  Backend
-> Python(Django)
+<ul>
+  <li>Frontend:</li>
+  <ul>
+    <li>React.js + Vite</li>
+    <li>HTML-5</li>
+    <li>CSS-3</li>
+  </ul>
+  <br>
+  <li>Backend</li>
+ <ul><li> Python(Django)</li></ul>
+</li>
   
 
 ## Contributors:
