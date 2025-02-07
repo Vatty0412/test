@@ -36,7 +36,7 @@ Team Name: Invictus
 * [Jason Nepolian Pinto](https://github.com/JasonPinto24)
 * [Vatsal ](https://github.com/Vatty0412)
 * [Bhavani Srinivasan](https://github.com/pokobholu)
-* [Nikita Chittoor](https://github.com/)
+* [Nikita Chittoor](https://github.com/niki-1003)
 
 
 ### Made at:
