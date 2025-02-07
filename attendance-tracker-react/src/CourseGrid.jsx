@@ -26,7 +26,7 @@ const CourseGrid = () => {
     return (
         <div className="course-grid">
             {courses.map((course, index) => (
-                <CourseCard 
+                <CourseCard class
                     key={index} 
                     courseName={course.title} 
                     description={course.description} 

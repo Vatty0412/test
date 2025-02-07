@@ -1,10 +1,14 @@
 .courses {
     padding: 50px;
-    background-image: url('./courses_bg.png');
+    background-image: url('./courses_bg_temp.png');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
     height: calc(100vh - 70px);
     margin: 0;
     overflow: auto;
+}
+
+.courses h1 {
+    color:black;
 }

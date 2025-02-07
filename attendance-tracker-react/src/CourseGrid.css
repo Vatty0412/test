@@ -6,7 +6,8 @@
     grid-gap: 1px 1px;
 }
 
-.add-course-grid:hover {
-    background-color: #f0f0f0 !important;
+.course-card:hover {
+    background-color: #E09B00 !important;
  }
+
     
