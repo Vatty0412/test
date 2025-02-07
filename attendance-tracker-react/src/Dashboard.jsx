@@ -9,17 +9,28 @@ const Dashboard = () => {
   const classes = [
     { name: 'Math', timings: '10:00 AM - 11:00 AM' },
     { name: 'Science', timings: '11:00 AM - 12:00 PM' },
+    { name: 'Math', timings: '10:00 AM - 11:00 AM' },
+    { name: 'Science', timings: '11:00 AM - 12:00 PM' },
+    { name: 'Math', timings: '10:00 AM - 11:00 AM' },
+    { name: 'Science', timings: '11:00 AM - 12:00 PM' },
   ];
 
   const courses = [
-    { name: 'Math', attendance: 3, totalClasses: 5 },
-    { name: 'Science', attendance: 2, totalClasses: 5 },
-    { name: 'CS',attendance: 2,totalClasses: 5}
+    { name: 'Math', attendance: 0, totalClasses: 0 },
+    { name: 'Science', attendance: 0, totalClasses: 0 },
+    { name: 'CS',attendance: 0,totalClasses: 0},
+    { name: 'Math', attendance: 0, totalClasses: 0 },
+    { name: 'Science', attendance: 0, totalClasses: 0 },
+    { name: 'CS',attendance: 0,totalClasses: 0},
   ];
 
   return (
     <><div className="dashboard">
       <div className="class-cards">
+        <div className='titles'>
+        <h2>Day</h2>
+        <h3>Date/Time</h3>
+        </div>
         {classes.map((cls, index) => (
           <ClassCard key={index} className={cls.name} timings={cls.timings} />
         ))}
@@ -29,6 +40,7 @@ const Dashboard = () => {
           <CourseCard 
           key={index} 
           courseName={course.name} 
+          
           attendance={course.attendance} 
           totalClasses={course.totalClasses}
           showAttendance={true} />

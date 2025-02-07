@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "High Tower Text";
+  src: url("/fonts/HighTowerText.woff2") format("woff2"),
+       url("/fonts/HighTowerText.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .navbar {
     display: flex;
     position: fixed;
@@ -13,7 +21,8 @@
   }
   
   .navbar-title {
-    font-size: 24px;
+    font-size: 30px;
+    font-family: "High Tower Text", serif;
   }
   
   .navbar-user {
@@ -34,11 +43,15 @@
   }
 
   .email {
-    font-weight: bold;
+    font-weight: 500;
+    font-family: "High Tower Text", serif;
+    font-size: 20px;
   }
 
   .branch {
-    font-size:0.9em;
+    font-family: "High Tower Text", serif;
+    font-weight: 400;
+    font-size:15px;
     color:white;
   }
   
@@ -80,18 +93,22 @@
   }
 
   .dropdown-content a {
-    display: block; /* Make each item a block element */
+    display: flex; /* Make each item a block element */
+    align-items: center;
+    gap: 8px;
     color: white; /* Text color for dropdown items */
-    /*text-shadow: 
-    -0.5px -0.5px 0 #7D533B,  
-     0.5px -0.5px 0 #7D533B,
-    -0.5px  0.5px 0 #7D533B,
-     0.5px  0.5px 0 #7D533B;*/
     padding: 10px; /* Padding for dropdown items */
     text-decoration: none; /* Remove underline from links */
     border-radius: 5%;
     transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background and color */
     transition-delay: 0.2s; /* Delay before the transition starts */
+
+  }
+
+  .dropdown-content a img {
+    filter: invert(100%) brightness(200%);
+    width: 20px;
+    height: auto;
   }
   
   .dropdown-content a:hover {

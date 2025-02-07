@@ -1,12 +1,42 @@
 /* src/AddCourseCard.css */
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+
 .add-course-card {
-    border: 2px dashed #4CAF50; /* Example styling */
-    padding: 20px;
+    background-color: #FFB200;
+    border-radius: 16px;
+    border: 1px solid rgba(197, 142, 0, 0.44);
+    margin:10px;
+    padding: 15px;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s;
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(197, 142, 0, 0.44);
+    box-shadow: 0 0 10px rgb(197, 142, 0,0.6), /* Outer glow */ 
+    0 0 15px rgba(255, 178, 0, 0.6); /* Inner gold shine */
+    transition: all 0.3s ease-in-out;
+
+    display: flex;
+    flex-direction: column; /* Stack image & text vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers content vertically */
+    padding-top:30px;
+
+    font-family: "Julee", cursive;
+
 }
 
+.add-course-card h4 {
+    font-size: 20px;
+}
 .add-course-card:hover {
-    background-color: #f0f0f0; /* Change background on hover */
+    background-color: rgba(255,181,0,0.90) !important;
+    box-shadow: 0 0 15px 	rgb(31, 170, 89,0.4),
+                inset 0 0 15px 	rgb(40, 167, 69,0.4);
+    transform: scale(1.05);
+}
+
+.add-course-card img {
+    width: 20px;
+    align-items: center;
 }

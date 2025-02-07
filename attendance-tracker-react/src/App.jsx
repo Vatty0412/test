@@ -12,9 +12,9 @@ import './App.css';
 const App = () => { 
   return ( 
   <div className="app"> 
-    <Navbar /> 
-    <Dashboard /> 
-    <Courses /> 
+    <div className='app-navbar'><Navbar /></div>
+    <div className='app-dashboard'><Dashboard /></div>
+    <div className='app-courses'><Courses /></div> 
   </div> 
   ); 
 };

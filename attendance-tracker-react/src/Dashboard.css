@@ -1,27 +1,54 @@
-.dashboard {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    overflow: auto;
-  }
-  
-  .class-cards {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .course-cards {
-    flex: 2;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 10px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
 
-  .dashboard {
-    background-image: url('./dashboard_bg.jpg');
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    height: calc(100vh - 70px);
-    margin: 0;
-  }
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  overflow: hidden; /* Prevents full page scrolling */
+  background-image: url('./dashboard_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 70px);
+  margin: 0;
+}
+
+.class-cards {
+  flex: 1;
+  margin-right: 20px;
+  overflow-y: auto; /* Enables independent scrolling */
+  scrollbar-width: none;
+}
+
+.course-cards {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Fix grid size */
+  gap: 10px;
+  overflow-y: auto; /* Enables independent scrolling */
+  scrollbar-width: none;
+}
+
+.class-cards::-webkit-scrollbar, 
+.course-cards::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome, Safari */
+}
+
+.titles {
+  display:block;
+  margin: 15px;
+  display: block;
+  top: 0;
+  z-index: 10;
+  font-family: "Julee", cursive;
+}
+
+.titles h2 {
+  font-size: 30px;
+  color: #664404;
+}
+
+.titles h3 {
+  font-size: 20px;
+  color: #664404
+}

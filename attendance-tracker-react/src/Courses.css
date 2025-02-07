@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "High Tower Text";
+    src: url("/fonts/HighTowerText.woff2") format("woff2"),
+         url("/fonts/HighTowerText.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .courses {
     padding: 50px;
     background-image: url('./courses_bg_temp.png');
@@ -7,8 +15,11 @@
     height: calc(100vh - 70px);
     margin: 0;
     overflow: auto;
+    scrollbar-width: none;
 }
 
 .courses h1 {
     color:black;
+    margin-left: 10px;
+    font-family: "High Tower Text", serif;
 }

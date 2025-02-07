@@ -5,8 +5,8 @@ import './AddCourseCard.css'; // Create a CSS file for styling
 const AddCourseCard = ({ onClick }) => {
     return (
         <div className="add-course-card" onClick={onClick}>
+            <img src = 'plus_add.svg' alt = 'addcoursesplus'></img>
             <h4>Add New Course</h4>
-            <p>Click here to add a new course.</p>
         </div>
     );
 };

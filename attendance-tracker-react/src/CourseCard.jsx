@@ -19,15 +19,21 @@ const CourseCard = ({ courseName, description, attendance, totalClasses,showAtte
 
   return (
     <div className="course-card">
-      <h4>{courseName}</h4>
-      <p>{description}</p> {/* Display the course description */}
+      <h3>{courseName}</h3>
+      {description && <p>{description}</p>}
       {showAttendance && (
         <div className='course-card-contents'>
-          <p>Attended: {attended}</p>
-          <p>Missed: {missed}</p>
+          <div className = "attendence-info">
+          <p>Attended:
+            <span className="attendance-number">{attended}</span>
+          </p>
+          <p>Missed:     
+            <span className="attendance-number">{missed}</span
+          ></p>
+          </div>
           <div className="buttons">
-            <button onClick={handleAttend}>+</button>
-            <button onClick={handleMiss}>-</button>
+            <button onClick={handleAttend}><img src = 'plus_green.png' alt = "Button Icon"></img></button>
+            <button onClick={handleMiss}><img src = 'minus_red.png' alt = 'Button Icon'></img></button>
           </div>
           <div className='progress-bar'>
           <p>Attendance: {percentage.toFixed(2)}%</p>

@@ -1,18 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+
 .course-card {
     background-color: #FFB200;
-    border: 1px;
-    border-radius: 5px;
     padding: 15px;
     margin: 10px;
     display: flex;
     flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     position: relative;
-    background: rgba(255, 178, 0, 0.60);
+    background: rgba(255, 178, 0, 0.70);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.8px);
     -webkit-backdrop-filter: blur(5.8px);
-    border: 1px solid rgba(255, 178, 0, 0.44);
+    border: 1px solid rgba(197, 142, 0, 0.44);
+    box-shadow: 0 0 10px 	rgb(197, 142, 0,0.6), /* Outer glow */ 
+              0 0 15px rgba(255, 178, 0, 0.6); /* Inner gold shine */
+    transition: all 0.3s ease-in-out;
+    font-family: "Julee", cursive;
+  }
+  
+  .course-card:hover {
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6), 
+                inset 0 0 25px rgba(255, 215, 0, 0.6);
+    transform: scale(1.05);
   }
   
   .course-card-contents {
@@ -21,14 +31,80 @@
     justify-content: space-between;
     flex-grow: 1;
     min-height: 90px;
+    scrollbar-width: none;
   }
 
+  .attendence-info {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .attendence-info p {
+    display: flex;
+    flex-direction: column; /* Puts number below text */
+    margin: 5px 10px; /* Adds spacing */
+    
+  }
+
+  .attendance-number {
+    font-size: 18px; /* Adjust number size */
+    font-weight: bold;
+  }
+  .course-card h3 {
+    margin:10px;
+    font-size: 23px;
+  }
+
+  .course-card p {
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
   .buttons {
     display: flex;
     justify-content: space-between;
+    gap: 10px; /* Adds spacing between buttons */
     margin-top: 10px;
   }
 
-  .the-bar {
-
+  .buttons button {
+    background:none;
+    border: none;
+    cursor: pointer;
+    width: 40px; /* Ensure button size is large enough */
+    height: 40px;
   }
+
+
+.buttons button img {
+  width: 100%;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px; 
+  margin-top: 0px;
+  margin: 10px;
+
+}
+.the-bar::-webkit-progress-bar {
+  background-color: #f7b91b;
+  border-radius: 7px;
+}
+
+.the-bar::-webkit-progress-value {
+  background: linear-gradient(to right, #D4881F,#E6A123, #FFD700); /* Blue to Green */
+  border-radius: 7px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: width 0.3s ease-in-out;
+}
+
+
+.the-bar {
+  width: 100%;
+  height: 10px; /* Fix height to avoid weird scaling */
+  border-radius: 7px;
+  overflow: hidden; /* Ensures rounded corners are visible */
+}

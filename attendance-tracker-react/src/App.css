@@ -1,9 +1,35 @@
-.app {
+  .app {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    min-height: 100vh;
+    height: calc(100vh - 70px);
   }
+
+
   *, *::before, *::after {
     box-sizing: inherit; /* Inherit box-sizing from the html element */
-}
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  .app {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar in Edge */
+  }
+  .app::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome/Safari */
+  }
+  
+  .app-dashboard,.app-courses {
+    height: calc(100vh - 70px);
+    scroll-snap-align: start;
+    margin: 0;
+    padding: 0;
+  }
