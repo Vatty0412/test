@@ -13,24 +13,29 @@ account settings. The platform also serves as a central hub for
 organizing your weekly and extra classes, ensuring you stay on top
 of your academic schedule.
   
-## Table of Contents:
+## Table of Contents: 
+
+- **📋 Attendance Tracking:** Monitors attendance via institute ID with course-wise records.  
+- **📅 Class Scheduling:** Set weekly or extra classes as needed.  
+- **📖 Course Overview:** View enrolled courses and daily schedules.  
+- **⚙️ Customization:** Manage profile, settings, and themes.  
+- **📊 Insights & Alerts:** Visual attendance trends, reminders, and low-attendance alerts.  
+
+The above repository consists of the following:  
+
+- 🛠 **Backend server files**  
+- 🎨 **Frontend pages**  
+- ⚛️ **Other React-related files**  
 
 ## Technology Stack:
-<ul>
-  <li>Frontend:</li>
-  <ul>
-    <li>React.js + Vite</li>
-    <li>HTML-5</li>
-    <li>CSS-3</li>
-  </ul>
-  <br>
-  <li>Backend</li>
-  
- <ul>
-   <li>Node.js</li>
-   <li>MongoDB</li>
- </ul>
-</ul>
+### 🖥️ Frontend  
+- React.js + Vite  
+- HTML5  
+- CSS3  
+
+### 🛠 Backend  
+- Node.js  
+- MongoDB  
   
 
 ## Contributors:
