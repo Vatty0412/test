@@ -1,8 +1,9 @@
 .courses {
-    padding: 20px;
-    background-color: #D6B685;
+    padding: 50px;
+    background-image: url('./courses_bg.png');
     background-size: cover;
     background-position:center;
+    background-repeat: no-repeat;
     height: calc(100vh - 70px);
     margin: 0;
     overflow: auto;

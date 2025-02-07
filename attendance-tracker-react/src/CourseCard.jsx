@@ -22,16 +22,18 @@ const CourseCard = ({ courseName, description, attendance, totalClasses,showAtte
       <h4>{courseName}</h4>
       <p>{description}</p> {/* Display the course description */}
       {showAttendance && (
-        <>
+        <div className='course-card-contents'>
           <p>Attended: {attended}</p>
           <p>Missed: {missed}</p>
           <div className="buttons">
             <button onClick={handleAttend}>+</button>
             <button onClick={handleMiss}>-</button>
           </div>
+          <div className='progress-bar'>
           <p>Attendance: {percentage.toFixed(2)}%</p>
-          <progress value={percentage} max="100"></progress>
-        </>
+          <progress className = 'the-bar' value={percentage} max="100"></progress>
+          </div>
+        </div>
       )}
     </div>
   );

@@ -9,6 +9,7 @@
     background-color: #7D533B;
     color: white;
     padding: 10px;
+    z-index: 10;
   }
   
   .navbar-title {
