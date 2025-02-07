@@ -26,7 +26,7 @@ of your academic schedule.
   <br>
   <li>Backend</li>
  <ul><li> Python(Django)</li></ul>
-</li>
+</ul>
   
 
 ## Contributors:
