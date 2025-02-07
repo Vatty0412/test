@@ -24,9 +24,12 @@ of your academic schedule.
     <li>CSS-3</li>
   </ul>
   <br>
-  <li>Node.js</li>
-  <li>MongoDB</li>
- <ul><li> Python(Django)</li></ul>
+  <li>Backend</li>
+  
+ <ul>
+   <li>Node.js</li>
+   <li>MongoDB</li>
+ </ul>
 </ul>
   
 
